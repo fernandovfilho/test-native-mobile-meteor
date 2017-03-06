@@ -1,0 +1,48 @@
+<head>
+  <title>Barcode Scanner</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <br>
+        {{> barcode_scanner}}
+        <br>
+        {{> example}}
+        <br>
+        <label>X</label>
+        <input type="button" class="form-control" id="x" value="">
+        <label>Y</label>
+        <input type="button" class="form-control" id="y" value="">
+        <label>Z</label>
+        <input type="button" class="form-control" id="z" value="">
+
+
+        <label>Touch X</label>
+        <input type="button" class="form-control" id="touchx" value="">
+        <label>Touch Y</label>
+        <input type="button" class="form-control" id="touchy" value="">
+      </div>
+
+
+
+    </div>
+  </div>
+
+</body>
+
+<template name="barcode_scanner">
+  <button id="scan" class="btn btn-block btn-danger">Scan QR</button>
+<br>
+  <button id="geo" class="btn btn-block btn-primary">Localização</button>
+  <br>
+  <button id="acelerometro" class="btn btn-block btn-warning">Giroscópio</button>
+  <br>
+  <button id="vibrar" class="btn btn-block btn-danger">Vibrar</button>
+</template>
+
+<template name="example">
+    <a href="#" class="takePhoto btn btn-block btn-success">Capturar Foto</a>
+    <img class="photo">
+</template>
